@@ -1,7 +1,11 @@
 {
-  "name": "node-canvas-renderer",
+  "name": "discord-bot-canvas",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NASGregorio/hoops-on-discord"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +14,8 @@
     "lint": "eslint --fix \"./src/**/*.js\"",
     "staged": "lint-staged --relative"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nelson Gregorio",
+  "license": "MIT",
   "dependencies": {
     "canvas": "^2.8.0",
     "discord.js": "^12.5.3",
@@ -24,6 +28,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "eslint": "^7.30.0",
     "husky": "^7.0.1",
+    "license-checker": "^25.0.1",
     "lint-staged": "^11.0.0"
   },
   "lint-staged": {
