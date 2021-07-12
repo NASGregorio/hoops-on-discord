@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint --fix \"./**/*.js\"",
+    "staged": "lint-staged --relative"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +22,13 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "eslint": "^7.30.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.0"
+  },
+  "lint-staged": {
+    "./**/*.js": [
+      "eslint"
+    ]
   }
 }
