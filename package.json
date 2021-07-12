@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "start": "node index.js",
-    "lint": "eslint --fix \"./**/*.js\"",
+    "start": "node src/index.js",
+    "lint": "eslint --fix \"./src/**/*.js\"",
     "staged": "lint-staged --relative"
   },
   "author": "",
@@ -27,7 +27,7 @@
     "lint-staged": "^11.0.0"
   },
   "lint-staged": {
-    "./**/*.js": [
+    "src/**/*.js": [
       "eslint"
     ]
   }
